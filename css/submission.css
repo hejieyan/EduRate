@@ -1,0 +1,98 @@
+/* Review Submission Main Content Styles */
+
+/* TODO: Media Query for mobile; */
+main div {
+	width: 1280px;
+}
+
+main div h1 {
+	display: block;
+	font-family: "Abel", sans-serif;
+	font-size: 32pt;
+	width: 50%;
+	text-align: left;
+	margin: 32px 0 20px 0; 
+	padding-left: 10px;
+	color: #554f61;
+}
+
+fieldset {
+	text-align: left;
+	width: 45%;
+	font-family: "Roboto", sans-serif;
+	border: 1px black solid;
+	padding: 10px 20px;
+}
+fieldset:first-child {
+	display: block;
+	float: left;
+}
+
+/* TODO: MEDIA QUERY FOR COLUMN LAYOUT ON SMALLER DISPLAYS; */
+fieldset:nth-child(2) {
+	display: block;
+	float: right;
+}
+
+fieldset > legend {
+	font-size: 24pt;
+}
+
+fieldset > p {
+	font-size: 14pt;
+	margin: 4pt 0;
+}
+
+fieldset:required {
+	padding-left: 4pt; 
+	min-width: 200pt;
+	font-size: 12pt;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* MARK: required fields styles */
+textarea {
+	padding-left: 4pt; 
+	font-size: 12pt;
+	width: 100%;
+	resize: none;
+}
+
+/* Change colour of placeholder text to show required field */
+/* TODO: Change the colour dynamically */
+/*input[type=file] {
+	color: #FF5058;
+}*/
+
+/*:required {
+	border-color: #FF5058;
+}*/
+
+::-webkit-input-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+::-moz-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+
+/* TODO: alternative to fix margin; */
+#submitReview {
+	display: inline-block;
+	width: 100pt;
+	height: 20pt;
+	margin: auto;
+}
+
+/* TEMP */
+/* UploadImage set to hidden, will be revealed once user selects an image to upload*/
+#uploadImage {
+	display: none;
+	max-height: 800pt; 
+}
+
+#ratingImage {
+	display: block;
+}

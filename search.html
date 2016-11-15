@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>EduRate - Search</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel%7CRoboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<script type="text/javascript" src="js/jQuery/jquery-3.1.1.js"></script>
+	<!-- loads the javascript asynchronously and deferred so that the global variable will be initiated after the HTML elements are loaded -->
+	<script async defer type="text/javascript" src="js/search.js"></script>
+</head>
+
+<body>
+<!-- wrapper used for flexbox styling -->
+	<div class="wrapper">
+	<!-- background image which will be under the main content -->
+		<img class="background" src="assets/background_image1.jpg" alt="search page background">
+	    <header>
+			<div class="headerContent">
+	    		<div class="headerImages">
+	    			<!-- Logo created with: http://logomakr.com -->
+		    		<img src="assets/logo.png" alt="EduRate logo" id="logo">
+					<img src="assets/heading.png" alt="rate your education" id="heading">    			
+	    		</div>
+				
+				<div class="register button">
+					<a id="register" href="registration.html">Register</a>
+				</div>
+	    	</div>
+
+	    	<div class="headerNavigation">
+		    	<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a class="active" href="#">Search</a></li>
+					<li><a href="submission.html">Submit</a></li>
+					<li><a href="#">Login</a></li>
+					<!-- Header Search -->
+					<li>
+						<form>
+							<input id="headerSearch" type="text" name="search">
+							<input class="button" id="headerSubmit" type="submit" value="Search">
+						</form>
+					</li>
+				</ul>
+	    	</div> 	
+	    </header>
+	    
+	    <main >
+	    	<div>
+		 		<h1>
+		 			Find Your School...
+		 		</h1>
+
+		 		<form action="results_sample.html">
+			 		<h2>
+			 			Search by School Name:
+			 		</h2>
+		 			<input class="textfield" type="text" name="searchSchoolName" value="Ontario Universities (*Sample)">
+			 		<h2>
+			 			Search by School Rating:
+			 		</h2>
+			 		<select id="ratingDropdown" name="ratingDropdown">
+			 			<option>Please select rating</option>
+			 			<option value="rating=1">1+</option>
+			 			<option value="rating=2">2+</option>
+			 			<option value="rating=3">3+</option>
+			 			<option value="rating=4">4+</option>
+			 			<option value="rating=5">5</option>
+			 		</select>
+			 		<h2>
+			 			Search Near You:
+			 		</h2>
+			 		<!-- P-tag will display the user's location or display error message -->
+			 		<p id="location"></p>
+			 		<!-- if button is clicked calls getUserLocation() function from .js to retrieve the user's location -->
+			 		<button onclick="getUserLocation();" type="button" class="formButton" id="searchByLocation">Get My Location</button>
+
+			 		<input class="formButton" id="submitSearch" type="submit" value="Search">
+		 		</form>
+	    	</div>
+	    </main>
+
+	    <footer>
+	    	<div class="footerContent">
+	    		<ul id="leftFooter">
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="">Site Map</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+						<li><a href="">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="">Copyright Compliance Policy</a>
+					</li>
+				</ul>
+
+				<div class="copyright">
+					&copy;2016 EduRate. All Rights Reserved.
+					<br>
+					&#42;Logo created with: http://logomakr.com&#42;
+				</div>
+	    	</div>
+			
+		</footer>
+	</div>
+
+</body>
+
+</html>

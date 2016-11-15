@@ -1,0 +1,113 @@
+/* Sample Result Page Styles */
+
+main {
+	width: 1280px;
+}
+
+main div {
+	max-width: 1280px;
+}
+
+main div h1 {
+	display: block;
+	font-family: "Abel", sans-serif;
+	font-size: 32pt;
+	width: 50%;
+	text-align: left;
+	margin: 20px 0px 20px 0px; 
+	padding-left: 10px;
+	color: #554f61;
+}
+
+main div h2 {
+	font-family: "Abel", sans-serif;
+	font-size: 24pt;
+	margin-bottom: 20px;
+}
+
+main div h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 18pt;
+	margin-bottom: 10px;
+}
+
+.results {
+	border: 1px black solid;
+}
+
+#resultsTable table {
+	width: 100%;
+}
+
+td, tr {
+	vertical-align: middle;
+}
+
+.resultsRow td {
+	padding: 15px;
+	width: 50%;
+}
+
+.resultsRow td:first-child {
+	text-align: center;
+}
+
+.resultsRow img {
+	max-width: 400px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.resultsRow td h3 {
+	display: inline-block;
+	vertical-align: 100%;
+}
+
+/* Mark: Table Border */
+table td {
+	border-top: 1px black solid;
+}
+
+/* MARK: Styling for Map Marker Info Window */
+/* TODO: inherit text-align */
+#mapContainer {
+	display: block;
+	text-align: center;
+	margin: 15px 0;
+}
+
+#map {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+.infoWindow * {
+	text-align: left;
+}
+
+.infoWindowGoToReview {
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.infoWindowContent {
+	text-align: left;
+}
+
+.infoWindowHeading {
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.infoWindowContent b {
+	font-weight: bold;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>EduRate - Search</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel%7CRoboto%7COpen+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/registration.css">
+	<script sync defer type="text/javascript" src="js/registration.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<img class="background" src="assets/background_image1.jpg" alt="search page background">
+	    <header>
+			<div class="headerContent">
+	    		<div class="headerImages">
+	    			<!-- Logo created with: http://logomakr.com -->
+		    		<img src="assets/logo.png" alt="EduRate logo" id="logo">
+					<img src="assets/heading.png" alt="rate your education" id="heading">    			
+	    		</div>
+				
+				<div class="register button">
+					<a id="register" href="#">Register</a>
+				</div>
+	    	</div>
+
+	    	<div class="headerNavigation">
+		    	<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li><a href="submission.html">Submit</a></li>
+					<li><a href="#">Login</a></li>
+					<!-- Header Search -->
+					<li>
+						<form>
+							<input id="headerSearch" type="text" name="search">
+							<input class="button" id="headerSubmit" type="submit" value="Search">
+						</form>
+					</li>
+				</ul>
+	    	</div> 	
+	    </header>
+
+	    <main >
+	    	<div>
+    			<h1>
+	    			Sign Up for EduRate!
+		    	</h1>
+
+		    	<form method="post" name="registrationForm" onsubmit="return validateForm();">
+<!-- HTML5 VALIDATION					<fieldset>
+						<legend>Required Information</legend>
+						<p>First Name:<br></p>
+						<input class="required" required type="text" name="firstName" placeholder="First Name"><br>
+						<p>Last Name:<br></p>
+						<input class="required" required type="text" name="lastName" placeholder="Last Name"><br>
+						<p>Username:<br></p>
+						<input class="required"  type="text" name="userName" placeholder="User Name"><br>
+						<p>Password:<br></p>
+						<input class="required" required type="password" name="pass" placeholder="Password">
+						<p>Verify Password:</p>
+						<input class="required" required type="password" name="passCheck" placeholder="Verify Password">
+						<p>Email:<br></p>
+						<input class="required" required type="email" name="email" placeholder="Email"><br>
+						<p>Zip Code:<br></p>
+						<input class="required" type="date" name="dateOfBirth" placeholder="Date of Birth"><br>
+					</fieldset> -->
+					<fieldset>
+						<legend>Required Information</legend>
+						<p>First Name:<br></p>
+						<input class="required" type="text" name="firstName" placeholder="First Name"><br>
+						<p>Last Name:<br></p>
+						<input class="required" type="text" name="lastName" placeholder="Last Name"><br>
+						<p>Username:<br></p>
+						<input class="required" type="text" name="userName" placeholder="User Name"><br>
+						<p>Password:<br></p>
+						<input class="required" type="password" name="password" placeholder="Password">
+						<p>Verify Password:</p>
+						<input class="required" type="password" name="passwordVerify" placeholder="Verify Password">
+						<p>Email:<br></p>
+						<input class="required" type="email" name="email" placeholder="Email"><br>
+						<p>Date of Birth:<br></p>
+						<input class="required" type="date" name="dateOfBirth" placeholder="Date of Birth"><br>
+					</fieldset>
+
+					<fieldset>
+						<legend>Optional Information</legend>
+						<p>Birthday:<br></p>
+						<input type="text" name="birthday"><br>
+						<p>School:<br></p>
+						<input type="text" name="school"><br>
+						<p>Grade/Year:<br></p>
+						<input type="text" name="year"><br>
+						<p>Faculty:<br></p>
+						<input type="text" name="faculty"><br>
+						<p>Residence/Dorm:<br></p>
+						<input type="text" name="residence"><br>
+						<p>Fraternity:<br></p>
+						<input type="text" name="fraternity"><br>
+						<p>Zip Code:<br></p>
+						<input class="required" type="text" name="postalAddress" placeholder="Zip Code / Postal Code"><br>
+<!-- 						<p class="hidden">Blank:<br></p>
+						<input class="hidden" type="text" name="blank"><br> -->
+					</fieldset>
+
+						<input id="submitRegister" type="submit" value="Search">
+				</form>
+	    	</div>
+	    </main>
+
+	    <footer>
+	    	<div class="footerContent">
+	    		<ul id="leftFooter">
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="">Site Map</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+						<li><a href="">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="">Copyright Compliance Policy</a>
+					</li>
+				</ul>
+
+				<div class="copyright">
+					&copy;2016 EduRate. All Rights Reserved.
+					<br>
+					&#42;Logo created with: http://logomakr.com&#42;
+				</div>
+	    	</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

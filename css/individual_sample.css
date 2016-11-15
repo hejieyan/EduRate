@@ -1,0 +1,114 @@
+/* Sample Review Page Styles */
+
+/** {
+	outline: red 2px solid;
+}*/
+
+main {
+	text-align: center;
+}
+
+main > div {
+	width: 1280px;
+	border: 1px black solid;
+}
+
+main div h1 {
+	display: block;
+	font-family: "Abel", sans-serif;
+	font-size: 32pt;
+	width: auto;
+	margin: 32px 0px 20px 0px; 
+	padding-left: 10px;
+	color: #554f61;
+}
+
+main div h2 {
+	font-family: "Abel", sans-serif;
+	font-size: 24pt;
+	margin-bottom: 20px;
+}
+
+main div h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 16pt;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+main div h4 {
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+}
+
+main div p {
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+	margin-bottom: 10px;
+}
+
+.reviewText {
+	position: relative;
+	margin-left: 100pt;
+}
+
+.coverImage {
+	max-height: 450pt;
+	display: block;
+	margin: auto;
+}
+
+b {
+	font-weight: bold;
+}
+
+#averageRating {
+	max-width: 400px;
+}
+
+#reviewTable table {
+	display: block;
+	border-top: 1px black solid;
+	margin: 0 20px;
+}
+
+#reviewTable td {
+	padding: 20px 20px 0 0px;
+}
+
+/* MARK: Google Map Styles*/
+#mapContainer {
+	display: block;
+	text-align: center;
+	margin: 15px 0;
+}
+
+#map {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+.infoWindow * {
+	text-align: left;
+}
+
+.infoWindowGoToReview {
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.infoWindowContent {
+	text-align: left;
+}
+
+.infoWindowHeading {
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	margin-bottom: 4px;
+}

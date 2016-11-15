@@ -1,0 +1,50 @@
+html * {
+	border: 1pt solid red;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+.flexWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background-color: #554f61;
+}
+
+.headerContent {
+	padding: 0 2%;
+	height: 100%;
+	min-width: 320px;
+	width: 100%;
+	max-width: 1920px;
+	margin: auto;
+}
+
+.headerFlexWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.leftHeader, .rightHeader {
+	height: 100%;
+	width: 50%;
+}
+
+.logo {
+	position: relative;
+	height: 100%;
+	width: auto;
+}

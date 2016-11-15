@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+	<title>EduRate - Search</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel%7CRoboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/results_sample.css">
+
+	<!-- Loads the Google Maps API with API Key-->
+	<!-- scripts are deferred until page has been parsed to initialize variables -->
+	<script async defer type="text/javascript" src="js/results_sample.js"></script>
+	<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBQg3XuX5sV-ce2C5-zbne4VlnVzZEhySI"></script>
+
+</head>
+
+<body onload="getUserLocation();">
+
+	<div class="wrapper">
+		<img class="background" src="assets/background_image1.jpg" alt="search page background">
+	    <header>
+			<div class="headerContent">
+	    		<div class="headerImages">
+	    			<!-- Logo created with: http://logomakr.com -->
+		    		<img src="assets/logo.png" alt="EduRate logo" id="logo">
+					<img src="assets/heading.png" alt="rate your education" id="heading">    			
+	    		</div>
+				
+				<div class="register button">
+					<a id="register" href="registration.html">Register</a>
+				</div>
+	    	</div>
+
+	    	<div class="headerNavigation">
+		    	<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a class="active" href="search.html">Search</a></li>
+					<li><a href="submission.html">Submit</a></li>
+					<li><a href="#">Login</a></li>
+					<!-- Header Search -->
+					<li>
+						<form>
+							<input id="headerSearch" type="text" name="search">
+							<input class="button" id="headerSubmit" type="submit" value="Search">
+						</form>
+					</li>
+				</ul>
+	    	</div> 	
+	    </header>
+
+	    <main >
+	    	<div>
+	    		<div class="headings">
+	    			<h1>
+			 			Showing Results for...
+			 		</h1>
+
+			 		<h2>
+			 			"Ontario Universities"
+			 		</h2>
+	    		</div>
+		 		
+	    		<div class="results">
+			 		<!-- div for styling and holding the google API map -->
+			 		<div id="mapContainer">
+			 			<!-- div to hold the map content -->
+			 			<!-- TODO: Zoom into marker when clicked -->
+			 			<!-- TODO: Use Google Places instead of geolocation coordinates -->
+			 			<div id="map"></div>
+			 		</div>
+
+			 		<div id="resultsTable">
+			 			<table>
+			 				<tr class="resultsRow">
+		 						<td>
+		 							<!-- placeholder sample img cover image -->
+									<!-- Source: http://historicalhamilton.com/media/images/3234.jpg -->
+		 							<img src="assets/sample_uni.jpg" alt="sample result McMaster University cover image">
+		 						</td>
+		 						<td>
+		 							<h2><a href="individual_sample.html">McMaster University</a></h2>
+		 							<h3>Address: 1280 Main St W, Hamilton, ON L8S 4L8</h3><h3>Average Rating:</h3>
+		 							<!-- Source: http://free-psd.org/_ph/2/538198305.jpg -->
+		 							<img src="assets/sample_rating.jpg" alt="sample rating stars">
+		 						</td>
+			 				</tr>
+			 				<tr class="resultsRow">
+		 						<td>
+		 							<!-- placeholder sample img cover image -->
+		 							<img src="assets/sample_uni2.jpg" alt="sample result Western University cover image">
+		 						</td>
+		 						<td>
+		 							<h2><a href="#">University of Western Ontario</a></h2>
+		 							<h3>Address: 1151 Richmond St, London, ON N6A 3K7</h3><h3>Average Rating:</h3>
+		 							<!-- Source: http://free-psd.org/_ph/2/538198305.jpg -->
+		 							<img src="assets/sample_rating.jpg" alt="sample rating stars">
+		 						</td>
+			 				</tr>
+			 				<tr class="resultsRow">
+		 						<td>
+			 						<!-- placeholder sample img cover image -->
+									<!-- Source: http://cdn.saultonline.com/wp-content/uploads/2015/10/waterloo.jpg -->
+		 							<img src="assets/sample_uni3.jpg" alt="sample results Laurier University cover image">
+		 						</td>
+		 						<td>
+		 							<h2><a href="#">Wilfred Laurier University	</a></h2>
+		 							<h3>Address: 75 University Ave W, Waterloo, ON N2L 3C5</h3><h3>Average Rating:</h3>
+		 							<!-- Source: http://free-psd.org/_ph/2/538198305.jpg -->
+		 							<img src="assets/sample_rating.jpg" alt="sample rating stars">
+		 						</td>
+			 				</tr>
+			 			</table>
+			 		</div>
+	    		</div>
+	    	</div>
+	    </main>
+
+	    <footer>
+	    	<div class="footerContent">
+	    		<ul id="leftFooter">
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="">Site Map</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+						<li><a href="">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="">Copyright Compliance Policy</a>
+					</li>
+				</ul>
+
+				<div class="copyright">
+					&copy;2016 EduRate. All Rights Reserved.
+					<br>
+					&#42;Logo created with: http://logomakr.com&#42;
+				</div>
+	    	</div>
+			
+		</footer>
+	</div>
+
+</body>
+
+</html>

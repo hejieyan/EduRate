@@ -1,0 +1,23 @@
+COLOURS
+
+Dominant Colour: Yellow: F4EB4E
+Accent Colours:
+	Lime: 5FC972
+	Nut: DD9E5A
+	Rose: FF5058
+	Blue: 68CEFA, alternate: 08AFF7
+
+Background Colour:
+	White
+
+Banner Colour:
+	Grey: 554f61, alternate: 666666
+
+-----------------------------------------------
+FONTS
+
+Primary Paragraph Font: 
+	Font Family: Roboto (Google)
+	Font Size: 15px, <specify em value>
+	Font Style: normal
+

@@ -1,0 +1,100 @@
+/* Registration Main Content Styles */
+
+main div {
+	width: 1280px;
+}
+
+main div h1 {
+	display: block;
+	font-family: "Abel", sans-serif;
+	font-size: 32pt;
+	width: 50%;
+	text-align: left;
+	margin: 20px 0px 20px 0px; 
+	padding-left: 10px;
+	color: #554f61;
+}
+
+/* TODO: FlexBox; */
+/*form {
+	display: flex;
+	justify-content: space-between;
+}*/
+
+fieldset {
+	text-align: center;
+	width: 45%;
+	font-family: "Roboto", sans-serif;
+	border: 1px black solid;
+	padding: 10px 20px;
+}
+
+fieldset:first-child {
+	display: block;
+	float: left;
+}
+/* TODO: MEDIA QUERY FOR COLUMN LAYOUT ON SMALLER DISPLAYS; */
+fieldset:nth-child(2) {
+	display: block;
+	float: right;
+}
+
+fieldset > legend {
+	font-size: 24pt;
+}
+
+fieldset > p {
+	font-size: 14pt;
+}
+
+fieldset > input {
+	font-size: 12pt;
+	margin-bottom: 10px;
+}
+
+/* TODO: Alternative Solution to hack fix*/
+.hidden {
+	visibility: hidden;
+}
+
+/* TODO: alternative to fix margin; */
+#submitRegister {
+	display: inline-block;
+	width: 100pt;
+	margin: 10pt 45%;
+}
+
+/* MARK: Required fields styles */
+fieldset input{
+	min-width: 100pt;
+	width: 200pt;
+	text-align: center;
+}
+/* Sets the optional field placeholders to teal */
+input:required::-webkit-input-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+
+input:required.required::-moz-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+/* Sets required field placeholders to rose*/
+input:required::-webkit-input-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+
+input:required.required::-moz-placeholder {
+	color: #FF5058;
+	opacity: 0.8;
+}
+
+/* MARK: Media Query to change textbox flow vertically at lower resolution */
+@media screen and (max-width: 1280px){
+    fieldset {
+    	display: block;
+    	clear: right;
+    }
+}

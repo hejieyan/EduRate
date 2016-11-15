@@ -1,0 +1,44 @@
+/* Search Page CSS */
+
+/*Main Content Formatting*/
+main {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Abel", sans-serif;
+	font-size: 64pt;
+	text-align: center;
+	position: relative;
+	margin-top: 80pt;
+	color: #554f61;
+}
+
+h2 {
+	font-family: "Abel", sans-serif;
+	font-size: 32pt;
+	margin-top: 32pt;
+}
+
+.textfield, #ratingDropdown {
+	margin-top: 16pt;
+	width: 200pt;
+	text-align: center;
+	height: 16pt;
+}
+
+.formButton {
+	height: 26pt;
+	min-width: 62pt;
+	border-radius: 10px;
+	display: block;
+	margin: 20pt auto;
+}
+
+#submitSearch {
+	height: 30pt;
+	font-weight: bold;
+	color: #666666;
+	background-color: #DD9E5A;
+}

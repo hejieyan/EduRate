@@ -1,0 +1,228 @@
+/* General Layout  */
+
+/* Using a flexbox to arrange the header, content, and footer verically */
+.wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+} 
+
+/* Header Layout*/
+
+/*Changes the font, background colour, and makes sure the header is always on top by setting z-value to 1*/
+header {
+	font-family: "Abel", sans-serif;
+	font-size: 14pt;
+	background-color: #554f61;
+	width: 100%;
+	z-index: 1;
+}
+
+/* space out the top half of header */
+.headerContent {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 1280px;
+
+}
+
+/* space out the logos */
+.headerImages {
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*keeps the logo on the very left of the header*/
+#logo {
+	float: left;
+	max-width: 80px;
+}
+
+/* formats the heading to stay on to stay on the right on the logo */
+#heading {
+	float: right;
+	margin: 18px;
+	opacity: 0.85;
+	position: relative;
+}
+
+/* formats the button and place it on the far right side of the header */
+#register {	
+	float: right;
+	margin: 18pt 0;
+	font-size: 20pt;
+
+	text-decoration: none; 
+    display: inline-block; padding: 2px 8px;
+    background: ButtonFace; color: ButtonText;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+
+/* button effect when pressed */
+#register:active {
+	border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+
+/* Header Navigation Bar */
+
+/* formats the navigation bar as a list */
+header ul {
+	max-width: 1280px;
+    list-style-type: none;
+    margin: auto;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #554f61;
+}
+
+/* make all the list items float left so they are in a row and hugging each other */
+header li {
+    float: left;
+    border-right:1px solid #bbb;
+    background-color: #DD9E5A;
+}
+
+/* formats the search bar in the header */
+header li:last-child {
+    border-right: none;
+    float: right;
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+/* adding style to the navigation bar buttons */
+header li a {
+    display: block;
+    color: #F4EB4E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* state of button when hovering on a non-active button */
+header li a:hover:not(.active) {
+    background-color: #666;
+    color: #68CEFA;
+}
+
+/* coluour of a button that is active */
+.active {
+    background-color: #59B369;
+}
+
+/* sizes the header search and make space for button on the right */
+#headerSearch {
+	width: 200pt;
+	height: 14pt;
+	margin-right: 10pt;
+}
+
+/* Main Content Layout */
+
+/* puts the main content under the header, set a max width for centered design on larger displays, z-value to keep content above the background image */
+main {
+	flex: 1;
+	max-width: 1280px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+/*makes background image cover entire content*/
+.background {
+	position: fixed;
+	opacity: 0.25;
+	z-index: 0;
+}
+
+/* formats colours for links in three different states */
+main a:link {
+	color: #08aff7;
+}
+
+main a:visited {
+	color: #DD9E5A;
+}
+
+main a:hover {
+	color: #666;
+}
+
+/* Footer Layout */
+
+footer {
+	margin-top: 24pt;
+	flex: none;
+	font-family: "Abel", sans-serif;
+	font-size: 14pt;
+	background-color: #554f61;
+	width:100%;
+	height:100px;
+/*	position: absolute;
+	bottom:0;
+	left:0;*/
+	z-index: 1;
+}
+
+/*centers the footer, make the footer always above the background*/
+.footerContent {
+	max-width: 1280px;
+	margin: auto;
+	z-index: 1;
+}
+
+/* formats the links in the footer to be in a row and colour */
+.footerContent ul {
+	max-width: 1280px;
+    list-style-type: none;
+    margin: auto;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #554f61;
+}
+
+/*keeps the footer links on the left*/
+.footerContent li {
+	float: left;
+}
+
+.footerContent li a {
+    display: block;
+    color: #F4EB4E;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+}
+
+.footerContent li a:hover:not(.active) {
+    color: #68CEFA;
+}
+
+.footerContent li a:first-child {
+	padding-left: 0;
+}
+
+footer .copyright {
+	color: #aaa;
+	margin: 5px 0;
+}
+
+/* Media Queries */
+
+/* Makes the navigation bar vertical when the screen is smaller than 850 pixels in width */
+@media screen and (max-width: 850px){
+    header li {
+    	float: none;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>EduRate - Search</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel%7CRoboto%7COpen+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/submission.css">
+	<!-- Script to use geoLocation -->
+	<script async defer type="text/javascript" src=js/submission.js></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<img class="background" src="assets/background_image1.jpg" alt="search page background">
+	    <header>
+			<div class="headerContent">
+	    		<div class="headerImages">
+	    			<!-- Logo created with: http://logomakr.com -->
+		    		<img src="assets/logo.png" alt="EduRate logo" id="logo">
+					<img src="assets/heading.png" alt="rate your education" id="heading">    			
+	    		</div>
+				
+				<div class="register button">
+					<a id="register" href="registration.html">Register</a>
+				</div>
+	    	</div>
+
+	    	<div class="headerNavigation">
+		    	<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li><a class="active" href="#">Submit</a></li>
+					<li><a href="#">Login</a></li>
+					<!-- Header Search -->
+					<li>
+						<form>
+							<input id="headerSearch" type="text" name="search">
+							<input class="button" id="headerSubmit" type="submit" value="Search">
+						</form>
+					</li>
+				</ul>
+	    	</div> 	
+	    </header>
+
+	    <main >
+	    	<div>
+    			<h1>
+	    			Submit a Review!
+		    	</h1>
+
+		    	<form method="post">
+					<fieldset>
+					<!-- All inputs are required -->
+					<!-- TODO: Form Validation using JavaScript -->
+						<legend>*Required Information*</legend>
+						<!-- <p>Gallery Images:<br></p> -->
+						<!-- <div id="uploadImage"></div> -->
+						<img id="uploadImage" src="assets/sample_uni.jpg" alt="User uploaded image">
+						<p>Upload Image:</p>
+						<!-- TODO: dynamically load image after user selects file -->
+						<input required type="file" name="Upload Image">
+						<!-- placeholder rating function -->
+						<!-- Source: http://free-psd.org/_ph/2/538198305.jpg -->
+						<img id="ratingImage" src="assets/sample_rating.jpg" alt="sample rating buttons">
+						<p>School Name:<br></p>
+						<input required type="text" name="schoolName" placeholder="School Name"><br>
+						<p>Description:<br></p>
+						<input required type="text" name="schoolDescription" placeholder="School Description"><br>
+						<p>Location:<br></p>
+						<!-- TODO: Better validation technique for latitude and longitude -->
+						<!-- step attribute allows for decimal numbers within range -->
+						<input required type="number" step="any" min="-90" max="90" id="latitude" placeholder="Latitude">
+						<input required type="number" step="any" min="-180" max="180" id="longitude" placeholder="Longitude">
+						<button type="button" onclick="getUserLocation();">Input my location</button>
+						<br><br>
+						<p>Review:<br></p>
+						<textarea required name="review" rows="10" cols="80" placeholder="Enter your review here..."></textarea>
+						<input id="submitReview" type="submit" value="Submit">
+					</fieldset>
+
+
+				</form>
+	    	</div>
+	    </main>
+
+	    <footer>
+	    	<div class="footerContent">
+	    		<ul id="leftFooter">
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="">Site Map</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+						<li><a href="">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="">Copyright Compliance Policy</a>
+					</li>
+				</ul>
+
+				<div class="copyright">
+					&copy;2016 EduRate. All Rights Reserved.
+					<br>
+					&#42;Logo created with: http://logomakr.com&#42;
+				</div>
+	    	</div>
+	    </footer>
+	</div>
+
+</body>
+
+</html>
